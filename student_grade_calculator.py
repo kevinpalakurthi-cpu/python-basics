@@ -1,7 +1,11 @@
-# Student Grade Calculator
+# Student Grade Calculator (Interactive)
 
-# List of student marks
-marks = [85, 78, 92, 88, 76]
+marks = []
+
+# Take 5 marks from user
+for i in range(5):
+    mark = int(input("Enter mark: "))
+    marks.append(mark)
 
 # Calculate average
 total = sum(marks)
@@ -21,3 +25,4 @@ else:
     grade = "Fail"
 
 print("Final Grade:", grade)
+
